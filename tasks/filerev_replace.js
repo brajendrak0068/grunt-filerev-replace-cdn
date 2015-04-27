@@ -16,7 +16,7 @@ var ALLOWED_PATH_CHARS = '([^\'"\\(\\)\\?#]*?)'; // Lazy, in order not to eat th
 var ENDING_DELIMITER   = '(\\\\?\'|\\\\?"|\\\\?\\)|\\?|#)';
 
 module.exports = function(grunt) {
-  grunt.registerMultiTask('filerev_replace', 'Replace references to grunt-filerev files.', function() {
+  grunt.registerMultiTask('filerevReplaceCdn', 'Replace references to grunt-filerev files.', function() {
     var assets_root = this.options().assets_root;
     var views_root = this.options().views_root || assets_root;
     var assets_paths = filerev_summary_to_assets_paths( assets_root );
