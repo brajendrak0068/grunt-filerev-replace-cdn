@@ -2,19 +2,19 @@
   "name": "grunt-filerev-replace-cdn",
   "description": "Replace references to grunt-filerev files.",
   "version": "1.0.2",
-  "homepage": "https://github.com/bhaskar0909/grunt-filerev-replace-cdn",
+  "homepage": "https://github.com/bhaskarmelkani/grunt-filerev-replace-cdn",
   "author": "Bhaskar Melkani <melkani.bhaskar@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bhaskar0909/grunt-filerev-replace-cdn.git"
+    "url": "https://github.com/bhaskarmelkani/grunt-filerev-replace-cdn.git"
   },
   "bugs": {
-    "url": "https://github.com/bhaskar0909/grunt-filerev-replace-cdn/issues"
+    "url": "https://github.com/bhaskarmelkani/grunt-filerev-replace-cdn/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/bhaskar0909/grunt-filerev-replace-cdn/blob/master/LICENSE-MIT"
+      "url": "https://github.com/bhaskarmelkani/grunt-filerev-replace-cdn/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
