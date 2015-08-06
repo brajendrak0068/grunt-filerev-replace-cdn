@@ -1,6 +1,6 @@
 /*
- * grunt-filerev-replace
- * https://github.com/solidusjs/grunt-filerev-replace
+ * grunt-filerev-replace-cdn
+ * https://github.com/solidusjs/grunt-filerev-replace-cdn
  *
  * Copyright (c) 2013 Sparkart Group, Inc.
  * Licensed under the MIT license.
