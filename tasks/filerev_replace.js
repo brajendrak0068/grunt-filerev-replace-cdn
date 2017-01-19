@@ -16,7 +16,7 @@ var ALLOWED_PATH_CHARS = '([^\'"\\(\\)\\?#]*?)'; // Lazy, in order not to eat th
 var ENDING_DELIMITER   = '(\\\\?\'|\\\\?"|\\\\?\\)|\\?|#)';
 
 module.exports = function(grunt) {
-  grunt.registerMultiTask('filerevReplaceCdn1', 'Replace references to grunt-filerev files.', function() {
+  grunt.registerMultiTask('filerevReplaceCdn', 'Replace references to grunt-filerev files.', function() {
     var assets_root = this.options().assets_root;
     var views_root = this.options().views_root || assets_root;
     var assets_paths = filerev_summary_to_assets_paths( assets_root );
@@ -27,6 +27,17 @@ module.exports = function(grunt) {
       log_view_changes( view_src, changes );
     });
   });
+  grunt.registerMultiTask('filerevReplaceCdn1', 'Replace references to grunt-filerev files.', function() {
+    var assets_root = this.options().assets_root;
+    var views_root = this.options().views_root || assets_root;
+    var assets_paths = filerev_summary_to_assets_paths( assets_root );
+		var cdn_url = this.options().cdn_url || '';
+
+    this.files[0].src.forEach( function( view_src ){
+      var changes = replace_assets_paths_in_view( assets_paths, view_src, views_root, cdn_url );
+      log_view_changes( view_src, changes );
+    });
+  });	
 
   function filerev_summary_to_assets_paths( assets_root ) {
     var assets = {};
